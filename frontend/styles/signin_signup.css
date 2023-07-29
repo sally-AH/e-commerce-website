@@ -10,7 +10,7 @@
 }
 
 .modal-content h1 {
-    color: #ac7535;
+    color: #dfa37f;
     font-family: Mistral;
 }
 
@@ -67,7 +67,7 @@ input::placeholder {
     font-family: Mistral;
 }
 .login-button:hover {
-    box-shadow:0px 0px 10px #a97539;
+    box-shadow:0px 0px 10px #dfa37f;
     border: solid 2px #96652d;
 }
 /*  the container  */
@@ -80,7 +80,7 @@ input::placeholder {
 
 
 .sign-container a {
-    color: #ac7535;
+    color: #dfa37f;
     text-decoration:none;
     font-weight: bold;
 }
@@ -92,7 +92,7 @@ input::placeholder {
 
 .close {
     align-self: flex-end;
-    color: #ac7535;
+    color: #dfa37f;
     font-size: 30px;
     cursor: pointer;
 }

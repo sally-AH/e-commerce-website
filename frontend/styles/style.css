@@ -22,8 +22,7 @@
     transition-duration: 1.2s;
 }
 .balck_bgc:hover {
-    background:#990f18;
-    color:white;
+    background:#dfa37f;
 }
 .logo a{
     font-family:Mistral;
@@ -70,3 +69,31 @@ input#search-feald::placeholder {
     color:rgba(255,255,255,0.4);
     font-size: 90%;
 }
+.hearo_container {
+    justify-content:center;
+    align-items: center;
+}
+.left_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.image {
+    position: relative;
+    width: 600px;
+    animation: up-and-down 5s linear infinite;
+}
+@keyframes up-and-down{
+    0%, 
+    100%  {
+        top: 0;
+    }
+    50% {
+        top: -50px;
+    }
+
+}
+
