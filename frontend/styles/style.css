@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: calibri;
+}
+
+.display_flex {
+    display: flex;
+    gap: 1vw;
+}
+.display_flex_center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    color:white;
+}
+.balck_bgc {
+    background-color: black;
+    transition-duration: 1.2s;
+}
+.balck_bgc:hover {
+    background:#990f18;
+    color:white;
+}
+.logo a{
+    font-family:Mistral;
+    text-decoration: none;
+    font-size:200%;
+    color:#dedede;
+    transition: all 0.5s ease;
+}
+#btn_transparent {
+    background: transparent;
+    padding: 4px 10px;
+    transition: all 0.5s ease;
+    color:rgba(240,240,240,0.7);
+    width:90px;
+    font-size:11px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border:solid 2px rgba(0,0,0,0);
+}
+#btn_transparent:hover {
+    border: solid 2px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3),
+               -1px -1px 10px rgba(0,0,0,0.3);
+}
+#search-feald {
+    background: transparent;
+    border: solid 2px rgba(255,255,255,0.2);
+    border-radius: 2px;
+    padding: 2px 10px;
+    transition: all 0.5s ease;
+    color:white;
+    width:140px;
+    text-transform:uppercase;
+}
+#search-feald:hover , #search-feald:focus {
+    border-color : rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3),
+               -1px -1px 10px rgba(0,0,0,0.3);
+    width:250px;
+}
+
+input#search-feald::placeholder {
+    color:rgba(255,255,255,0.4);
+    font-size: 90%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/signin_signup.css">
+    <title>Sally's</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hearo">
+            <div class="display_flex_center balck_bgc">
+                <div class="logo">
+                    <a href="index.html">Sally's</a>
+                </div>
+                <div class="display_flex">
+                    <button id="btn_transparent">
+                    Sign in
+                    </button>
+                    <input type="search" name="search1" id="search-feald" placeholder="search product">
+                      
+                </div>
+            </div>
+        </div>
+        <div class="categories"></div>
+        <div class="foter"></div>
+    </div>
+
+    <div id="id01" class="modal">
+        <div class="modal-content">
+            <div class="sign-container">
+               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+                <h1>Sally's Login</h1>
+                <input type="text" name="firstName" placeholder="Username or email" required>
+                <input type="password" name="pssword" placeholder="Password" required>
+                <p>Are you new to Sally's?&nbsp; <a href="#" id="btn_signup">Signup here</a></p>
+                <div class="clearfix">
+                <button type="submit" class="login-button" >Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="id02" class="modal display_flex">
+        <div class="modal-content">
+            <div class="sign-container">
+               <span onclick="document.getElementById('id02').style.display='none'; " class="close" title="close">&times;</span>
+                <h1>Sally's signup</h1>
+                <input type="text" name="firstName" placeholder="Username or email" required>
+                <input type="password" name="pssword" placeholder="Password" required>
+                <input type="text" name="firstName" placeholder="Username or email" required>
+                <input type="password" name="pssword" placeholder="Password" required>
+                <p>Already have an account?&nbsp; <a href="#" id="back_signin">Signin</a></p>
+                <div class="clearfix">
+                <button type="submit" class="login-button">signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
