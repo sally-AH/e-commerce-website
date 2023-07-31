@@ -1,0 +1,37 @@
+#section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10vw; */
+}
+
+#section1 img {
+    height: 600px;
+}
+
+#section1 #slogan {
+    color: rgba(20, 17, 17, 0.8);
+
+}
+
+#section1 #slogan #login {
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(0, 141, 68);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 20px 10px;
+    box-shadow: 3px 3px darkgreen;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+#section1 #slogan #login:hover {
+    padding: 15px 25px 15px;
+    box-shadow: 5px 5px 5px rgb(15, 50, 15);
+    background-color: rgb(1, 77, 1);
+}
+
+/* ------------------------------------------------------ */
