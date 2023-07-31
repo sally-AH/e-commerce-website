@@ -1,0 +1,93 @@
+/* rgb(0, 141, 68) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: calibri;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+}
+.navigation {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: rgb(0, 141, 68);
+    border-left: 12px solid darkgreen;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.user {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px 0px 20px ;
+}
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.prof {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.prof p {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+.navigation ul {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li div {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    gap: 3.5vw;
+    align-items: center;
+    color: white;
+}
+
+.navigation ul li div:hover {
+    color: rgb(0, 141, 68);
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.fa-solid {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+/* ---------------------------------------------------- */
