@@ -1,0 +1,56 @@
+#section2 {
+    text-align: center;
+    background-color: rgba(207, 217, 210, 0.6);
+    color: rgba(20, 17, 17, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    height: 70vh;
+}
+#section2 h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+#section2 span {
+    color: rgb(0, 141, 68);
+}
+.fa-headset, .fa-truck-fast, .fa-sack-dollar, .fa-face-smile {
+    color: rgba(20, 17, 17, 0.8);
+}
+
+#section2 #services {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+#section2 #services .s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 5px 15px;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s ease;
+}
+
+#section2 #services .s1:hover {
+    margin-top: -20px;
+    box-shadow: 8px 8px 8px rgba(20,17,17,0.8);
+}
+
+#section2 #services .s1 a {
+    font-size: 120px;
+
+}
+
+#section2 #services .s1:hover .s i{
+    color: rgb(0, 141, 68);
+}
+
+/* ------------------------------------------------------ */
