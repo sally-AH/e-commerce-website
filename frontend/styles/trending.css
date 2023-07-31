@@ -1,0 +1,85 @@
+#section3 {
+    text-align:center ;
+    color: rgba(20, 17, 17, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    height: 90vh;
+}
+
+#section3 h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#section3 span {
+    color: rgb(0, 141, 68);
+}
+
+#section3 #trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+} 
+
+#section3 #trending img{
+    width:200px;
+    align-self: center;
+}
+
+#section3 #trending .t1 {
+    border: 2px solid rgb(0, 141, 68);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+#section3 #trending .t1 .fa-heart {
+    display: none;
+    color: rgba(20, 17, 17, 0.8);
+    font-size: x-large;
+
+}
+
+#section3 #trending .t1 .fa-heart:hover{
+    color: rgb(202, 19, 19);
+}
+
+#section3 #trending .t1 a {
+    align-self: flex-start;
+    margin-top:.5rem;
+    margin-left:.5rem;
+}
+#section3 #trending .t1 .fa-star {
+    color: gold;
+
+}
+
+#section3 #trending .t1 h3 {
+    font-weight: bold;
+
+}
+
+#section3 #trending .t1 .buy-cart {
+    display: flex;
+    justify-content: baseline;
+}
+
+#section3 #trending .t1 .buy-cart .buy {
+    border: 0.1px solid rgb(8, 68, 37);
+    color: white;
+    background-color: rgb(0, 141, 68);
+    width: 100%;
+    font-size: large;
+    cursor: pointer;
+}
+#section3 #trending .t1 .buy-cart .buy:hover {
+    background-color: rgb( 0, 67, 32);
+}
+
+/* ------------------------------------------------------ */
