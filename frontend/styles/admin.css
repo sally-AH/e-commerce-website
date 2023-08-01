@@ -98,7 +98,7 @@ body {
     left: 260px;
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 5vh;
 }
 .card-container {
     width: 100%;

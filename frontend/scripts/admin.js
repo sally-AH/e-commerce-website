@@ -42,16 +42,21 @@ show_users.addEventListener("click", (event) => {
             const cell2 = document.createElement('td');
             const cell3 = document.createElement('td');
             const cell4 = document.createElement('td');
+            const cell5 = document.createElement('td');
+            const cell6 = document.createElement('td');
 
             cell1.textContent = value["user_id"];
             cell2.textContent = value["user_name"];
             cell3.textContent = value["user_email"];
             cell4.textContent = value["user_password"];
-
+            cell5.innerHTML=`<i i id="`+value["user_id"]+`" onclick="edit(this)" class="fa-solid fa-pen">`;
+            cell6.innerHTML=`<i onclick="delete(this)" class="fa-solid fa-trash">`;
             row.appendChild(cell1);
             row.appendChild(cell2);
             row.appendChild(cell3);
             row.appendChild(cell4);
+            row.appendChild(cell5);
+            row.appendChild(cell6);
 
             table.appendChild(row);
 
@@ -88,16 +93,22 @@ show_products.addEventListener("click", (event) => {
             const cell2 = document.createElement('td');
             const cell3 = document.createElement('td');
             const cell4 = document.createElement('td');
+            const cell5 = document.createElement('td');
+            const cell6 = document.createElement('td');
 
             cell1.textContent = value["product_id"];
             cell2.textContent = value["product_name"];
             cell3.textContent = value["product_desc"];
             cell4.textContent = value["product_price"];
+            cell5.innerHTML=`<i id="`+value["product_id"]+`" onclick="edit(this)" class="fa-solid fa-pen">`;
+            cell6.innerHTML=`<i onclick="delete(this)" class="fa-solid fa-trash">`;
 
             row.appendChild(cell1);
             row.appendChild(cell2);
             row.appendChild(cell3);
             row.appendChild(cell4);
+            row.appendChild(cell5);
+            row.appendChild(cell6);
 
             table.appendChild(row);
 
@@ -112,3 +123,6 @@ show_products.addEventListener("click", (event) => {
         console.error('Error:', error);
     });
 });
+function edit(l){
+    alert(l.id);
+}
