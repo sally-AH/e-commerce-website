@@ -5,6 +5,7 @@ use App\Models\Users;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -43,24 +44,32 @@ class UserController extends Controller
     }
 
     public function signIn(Request $request){
-        $user_email = $request->input('user_email');
-        $user_password = $request->input('user_password');
-        
-        $users = Users::where("user_email",$user_email)->get();
-        $encryptedPassword = Hash::make($user_password);
+        if ($request->isMethod('post')) {
+            $user_email = $request->input('user_email');
+            $user_password = $request->input('user_password');
 
-        if($users->isEmpty()){
-            return json_encode(array('status' => false,"message" => "user does not exist"));
-        }
-        else{
-            $credentials = $request->only('user_email', 'encryptedPassword');
-            if (Auth::attempt($credentials)) {
-                return redirect()->intended('/');
-            } else{
-                return json_encode(array("status" =>false, "message" =>"Invalid username or password"));
+            $users = Users::where("user_email",$user_email)->get();
+            // return json_encode(array("status" =>$user_password, "message" =>$user_email));
+            $encryptedPassword = Hash::make($user_password);
+
+            if($users->isEmpty()){
+                return json_encode(array('status' => false,"message" => "user does not exist"));
             }
+            else{
 
+                $credentials = $request->only('user_email', 'encryptedPassword');
+                if ($credentials) {
+                    return json_encode(array("status" =>true, "message" =>"loged in",'user_id' =>  $users->first()->user_id));
+                } 
+                else{
+                    return json_encode(array("status" =>false, "message" =>"Invalid useremail or password"));
+                }
+
+            }
         }
+
+        
+
     }
 
 }

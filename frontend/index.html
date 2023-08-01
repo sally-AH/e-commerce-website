@@ -71,7 +71,7 @@
     <div id="section3" class="trending">
         <h1><span>Trending</span> Items</h1>
         <div id="trending">
-            <div class="t1">
+            <!-- <div class="t1">
                 <a href=""><i class="fa-solid fa-heart"></i></a>
                 <br>
                 <br>
@@ -89,7 +89,7 @@
                 <br>
                 <h3>$199</h3>
                 <div class="buy-cart">
-                    <button class="buy">Buy Now</button>
+                    <button id ="try" class="buy">Buy Now</button>
                     <button class="buy">Add to cart</button>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                     <button class="buy">Buy Now</button>
                     <button class="buy">Add to cart</button>
                 </div>
-            </div>
+            </div> -->
             
         </div>
     </div>
@@ -275,11 +275,11 @@
             <div class="sign-container">
                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
                 <h1>Sally's Login</h1>
-                <input type="text" name="firstName" placeholder="Username or email" required>
-                <input type="password" name="pssword" placeholder="Password" required>
+                <input type="text" id="user_email" placeholder="Username or email" required>
+                <input type="password" id="user_pssword" placeholder="Password" required>
                 <p>Are you new to Sally's?&nbsp; <a href="#" id="btn_signup">Signup here</a></p>
                 <div class="clearfix">
-                <button type="submit" class="login-button" >Login</button>
+                <button type="submit" id="login-button" class="login-button" >Login</button>
                 </div>
             </div>
         </div>

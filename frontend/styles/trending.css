@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    height: 90vh;
+    /* height: 160vh; */
 }
 
 #section3 h1 {
@@ -40,7 +40,7 @@
 }
 
 #section3 #trending .t1 .fa-heart {
-    display: none;
+    /* display: none; */
     color: rgba(20, 17, 17, 0.8);
     font-size: x-large;
 
