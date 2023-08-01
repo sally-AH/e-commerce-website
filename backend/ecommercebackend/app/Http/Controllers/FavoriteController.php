@@ -11,17 +11,15 @@ use Illuminate\Support\Facades\DB;
 
 class FavoriteController extends Controller
 {
-    function add_favorite(Request $request, $id = "add"){
-        if($id == "add"){
+    function add_favorite(Request $request){
+        if ($request->isMethod('post')) {
             $favorite = new Favorites;
-        }else{
-            $favorite = Favorites::find($id);
+            $favorite->user_id = $request->input('user_id');
+            $favorite->product_id = $request->input('product_id');
+            $favorite->save();
+    
+            return json_encode(["favorites" => $favorite]);
         }
 
-        $favorite->user_id = $request->input('user_id');
-        $favorite->product_id = $request->input('product_id');
-        $favorite->save();
-
-        return json_encode(["favorites" => $favorite]);
     }
 }
